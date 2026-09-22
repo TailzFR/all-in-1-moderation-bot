@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "notice": "Word lists for the chat filter. Terms are matched after the message is normalised, so spacing, leetspeak, repeated letters and homoglyph substitutions are all caught without listing every variant here.",
+    "editing": "Add or remove terms and run !filter reload. Anything in 'allow' is protected from partial matches, which is how words like 'assassin' or 'Scunthorpe' stay legal."
+  },
+
+  "slurs": {
+    "racial": [
+      "nigger", "nigga", "niggur", "niger", "negro", "coon", "jigaboo", "porchmonkey",
+      "spic", "wetback", "beaner", "chink", "gook", "zipperhead", "jap",
+      "sandnigger", "towelhead", "raghead", "camelfucker", "pajeet", "currymuncher",
+      "abo", "boong", "gypo", "gyppo", "pikey", "tarbaby", "spearchucker", "mudshark",
+      "wigger", "houseslave", "slanteye", "yellowmonkey"
+    ],
+    "antisemitic": [
+      "kike", "heeb", "hymie", "shylock", "gasthejews", "hitlerdidnothingwrong", "sixgorillion"
+    ],
+    "homophobic": [
+      "faggot", "fagot", "fag", "faggit", "fudgepacker", "dyke", "tranny", "trannie",
+      "shemale", "heshe", "buttpirate", "queerbait", "carpetmuncher", "batty boy", "battyman"
+    ],
+    "ableist": [
+      "retard", "retarded", "tard", "sperg", "spastic", "spaz", "mongoloid", "cripple",
+      "midget", "window licker", "windowlicker"
+    ],
+    "other": [
+      "kys", "killyourself", "killurself", "neckyourself", "necky ourself", "hangyourself",
+      "rapist", "pedophile", "pedo", "groomer", "childfucker", "cp", "childporn"
+    ]
+  },
+
+  "profanity_strong": [
+    "fuck", "fucker", "fucking", "motherfucker", "cunt", "cock", "cocksucker",
+    "whore", "slut", "bitch", "bastard", "dickhead", "asshole", "arsehole",
+    "wanker", "twat", "prick", "bollocks", "bugger", "shithead", "jackass"
+  ],
+
+  "profanity_mild": [
+    "shit", "shitty", "crap", "damn", "goddamn", "hell", "ass", "arse", "dick",
+    "piss", "pissed", "bloody", "bugger", "git", "wtf", "stfu", "sob"
+  ],
+
+  "sexual": [
+    "porn", "pornhub", "onlyfans", "nudes", "hentai", "rule34", "nsfw", "creampie",
+    "blowjob", "handjob", "cumshot", "gangbang", "milf", "dildo", "buttplug"
+  ],
+
+  "threats": [
+    "iwillkillyou", "imgoingtokillyou", "illkillyou", "swat you", "swatting you",
+    "ddos you", "dox you", "doxx you", "ipgrab", "ip grab"
+  ],
+
+  "allow": [
+    "assassin", "assassinate", "assassination", "assess", "assessment", "asset", "assets",
+    "assign", "assignment", "assist", "assistant", "assume", "assumption", "assure",
+    "bass", "brass", "class", "classic", "compass", "cutlass", "embassy", "glass",
+    "grass", "harass", "harassment", "mass", "massive", "pass", "passive", "password",
+    "potassium", "sassy", "surpass", "trespass", "cassette", "carcass", "canvass",
+    "analysis", "analyst", "analyse", "analyze", "titan", "titanium", "constitution",
+    "substitute", "prostitute", "shiitake", "scunthorpe", "penistone", "lightwater",
+    "cockpit", "cocktail", "cockroach", "peacock", "shuttlecock", "weathercock",
+    "dickens", "dickinson", "hancock", "babcock", "hitchcock", "woodcock",
+    "buttress", "button", "buttress", "rebuttal", "abutment",
+    "document", "documentation", "circumstance", "cumulative", "cucumber", "accumulate",
+    "niger", "nigeria", "nigerian", "snigger", "sniggering", "renege", "denigrate",
+    "specialist", "speculate", "spectacle", "dyketon", "hemidemisemiquaver",
+    "faggoting", "haggis", "flagon", "dragon", "wagon", "paganism",
+    "retardant", "retardation", "flameretardant", "tardy", "custard", "mustard", "bastardise",
+    "midgets", "gadget", "budget", "widget", "fidget",
+    "hello", "shell", "shelf", "shed", "sheet", "shift", "ship", "shot", "shut",
+    "matsushita", "shiatsu", "shitake"
+  ],
+
+  "invite_patterns": [
+    "discord\\.gg/",
+    "discord\\.com/invite/",
+    "discordapp\\.com/invite/",
+    "dsc\\.gg/",
+    "invite\\.gg/",
+    "t\\.me/",
+    "telegram\\.me/"
+  ],
+
+  "rule_map": {
+    "racial": {"rule": "0.1", "clause": "B"},
+    "antisemitic": {"rule": "0.6", "clause": "C"},
+    "homophobic": {"rule": "0.2", "clause": "C"},
+    "ableist": {"rule": "0.9", "clause": "C"},
+    "other": {"rule": "0.4", "clause": "G"},
+    "threats": {"rule": "0.4", "clause": "A"},
+    "sexual": {"rule": "0.3", "clause": "A"},
+    "excessive_profanity": {"rule": "1.4", "clause": "B"},
+    "targeted_profanity": {"rule": "1.4", "clause": "B"},
+    "bypass": {"rule": "1.4", "clause": "C"},
+    "spam": {"rule": "1.4", "clause": "A"},
+    "advertising": {"rule": "1.3", "clause": "A"},
+    "mass_mention": {"rule": "0.4", "clause": "F"}
+  }
+}

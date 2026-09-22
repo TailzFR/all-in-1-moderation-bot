@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/store.json
+data/store.json.tmp
+data/store.corrupt-*.json
+data/backups/
+transcripts/
+logs/
