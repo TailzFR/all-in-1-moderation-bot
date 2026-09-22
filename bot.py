@@ -15,6 +15,7 @@ from core.memory import Memory
 from core.storage import JSONStore
 
 EXTENSIONS = (
+    "cogs.verify",
     "cogs.tickets",
     "cogs.appeals",
     "cogs.moderation",

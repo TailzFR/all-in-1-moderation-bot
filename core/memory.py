@@ -55,6 +55,19 @@ class Memory:
         self.store.mark_dirty()
         return note
 
+    def record_verification(self, user_id: int | str, *, passed: bool) -> dict[str, Any]:
+        profile = self.user(user_id)
+        meta = profile.setdefault("meta", {})
+        now = time.time()
+        if passed:
+            meta["verified_at"] = now
+        else:
+            meta["verify_failed_at"] = now
+            meta["verify_failures"] = int(meta.get("verify_failures", 0)) + 1
+        self.store.bump_stat("verifications_passed" if passed else "verifications_failed")
+        self.store.mark_dirty()
+        return profile
+
     def set_ticket_block(self, user_id: int | str, blocked: bool) -> None:
         self.user(user_id)["blocked_from_tickets"] = blocked
         self.store.mark_dirty()

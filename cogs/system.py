@@ -38,6 +38,13 @@ HELP_SECTIONS = [
         ],
     ),
     (
+        "Verification",
+        [
+            (f"{config.PREFIX}verify <member>", "Verify a member by hand and grant the verified role."),
+            (f"{config.PREFIX}verifypanel", "Repost the verification panel immediately."),
+        ],
+    ),
+    (
         "Appeals",
         [
             (f"{config.PREFIX}appeals", "List the appeals waiting on a decision."),

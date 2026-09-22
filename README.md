@@ -44,6 +44,9 @@ Everything server-specific lives in `.env`. To copy an ID, turn on Developer Mod
 | `TICKET_CATEGORY_ID` | Category that ticket channels are created in |
 | `TRANSCRIPT_CHANNEL_ID` | Where closed ticket transcripts are archived |
 | `SERVER_LOG_CHANNEL_ID` | Moderation and activity log |
+| `VERIFY_CHANNEL_ID` | Where the verification panel is posted |
+| `VERIFIED_ROLE_ID` | Role granted once a member passes verification |
+| `UNVERIFIED_ROLE_ID` | Optional role applied on join and removed on success |
 | `APPEAL_GUILD_ID` | Separate server that banned members can join |
 | `APPEAL_PANEL_CHANNEL_ID` | Where the appeal panel is posted |
 | `APPEAL_CHANNEL_ID` | Text channel for appeals, or a category to give each appeal its own channel |
@@ -52,6 +55,26 @@ Everything server-specific lives in `.env`. To copy an ID, turn on Developer Mod
 | `ROLE_*_ID`, `ROLE_*_NAME` | The six staff ranks and how each is named in messages |
 
 Staff ranks run from level 6 (Owner) down to level 1 (Discord Moderator). The minimum level for each action, ticket behaviour, colours and filter thresholds are set in `config.py`.
+
+## Verification
+
+New members have to pass a captcha before they get access. Set up the channel so unverified members can only see the verification channel, and give `VERIFIED_ROLE_ID` access to the rest of the server.
+
+When someone joins, the bot applies `UNVERIFIED_ROLE_ID` if you set one and sends them a DM pointing at the verification channel. In that channel they press **Verify** and get a private message containing a freshly generated picture of six distorted characters, plus a dropdown with five options. Only one matches the picture.
+
+- Right answer: they get the verified role, the unverified role comes off, and the log records it.
+- Wrong answer: they are DMed an explanation and kicked, so they can rejoin and try again.
+
+Staff, bots, the server owner and anyone with Manage Server are never kicked; they just get told to try again. A challenge expires after 3 minutes, and an expired or missing challenge never kicks anyone. Every picture is generated on the spot, so no two members see the same one.
+
+Settings live in `config.py`: `VERIFY_ENABLED`, `VERIFY_CODE_LENGTH`, `VERIFY_OPTION_COUNT`, `VERIFY_MAX_ATTEMPTS`, `VERIFY_KICK_ON_FAIL` (set it to `False` to let people retry instead of being kicked), `VERIFY_TIMEOUT_SECONDS` and `VERIFY_DM_ON_JOIN`.
+
+The bot needs Kick Members, and its role must sit above the verified role. Image generation needs Pillow.
+
+| Command | Purpose |
+|---|---|
+| `!verify <member>` | Verify a member by hand |
+| `!verifypanel` | Repost the verification panel |
 
 ## Tickets
 
@@ -131,6 +154,7 @@ Data is stored in `data/store.json` and saved every few seconds. Backups go to `
 bot.py              Startup, expiry timer, error handling
 config.py           Settings and .env loading
 cogs/
+  verify.py         Join captcha, verified role, kick on failure
   tickets.py        Panel, intake, relay, ratings, saved replies, auto-close, stats
   appeals.py        Appeal panel, form, claiming, decisions
   moderation.py     Slash commands and staff role management
@@ -138,7 +162,9 @@ cogs/
   system.py         Help, status, maintenance
   chatfilter.py     Chat filter (not loaded by default)
 core/
+  captcha.py        Captcha image and answer options
   cards.py          Ticket summary card rendering
+  fonts.py          Font loading for generated images
   transcripts.py    HTML transcripts
   memory.py         Cases, tickets, appeals, saved replies
   storage.py        JSON storage with backups

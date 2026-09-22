@@ -128,6 +128,18 @@ TICKET_AUTOCLOSE_AFTER_HOURS = 24
 TICKET_CARDS_ENABLED = True
 FONT_DIR = ASSET_DIR / "fonts"
 
+VERIFY_ENABLED = True
+VERIFY_CHANNEL_ID = _env_id("VERIFY_CHANNEL_ID")
+VERIFIED_ROLE_ID = _env_id("VERIFIED_ROLE_ID")
+UNVERIFIED_ROLE_ID = _env_id("UNVERIFIED_ROLE_ID") or None
+VERIFY_CODE_LENGTH = 6
+VERIFY_OPTION_COUNT = 5
+VERIFY_MAX_ATTEMPTS = 1
+VERIFY_KICK_ON_FAIL = True
+VERIFY_TIMEOUT_SECONDS = 180
+VERIFY_DM_ON_JOIN = True
+LEVEL_MANAGE_VERIFY = 4
+
 FILTER_ENABLED = False
 FILTER_MAX_CAPS_RATIO = 0.75
 FILTER_MIN_CAPS_LENGTH = 12
@@ -175,6 +187,15 @@ _REQUIRED_IDS = {
 
 def missing_settings() -> list[str]:
     missing = [name for name, value in _REQUIRED_IDS.items() if not value]
+    if VERIFY_ENABLED:
+        missing.extend(
+            name
+            for name, value in (
+                ("VERIFY_CHANNEL_ID", VERIFY_CHANNEL_ID),
+                ("VERIFIED_ROLE_ID", VERIFIED_ROLE_ID),
+            )
+            if not value
+        )
     if not STAFF_ROLE_IDS:
         missing.append("ROLE_*_ID (no staff roles are configured)")
     return missing

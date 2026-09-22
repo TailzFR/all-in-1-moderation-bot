@@ -3,17 +3,16 @@ from __future__ import annotations
 import io
 import logging
 import math
-import os
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Any
 
 import config
+from core import fonts
 
 try:
-    from PIL import Image, ImageDraw, ImageFont
+    from PIL import Image, ImageDraw
 except ImportError:
-    Image = ImageDraw = ImageFont = None
+    Image = ImageDraw = None
 
 log = logging.getLogger("manager.cards")
 
@@ -31,33 +30,6 @@ FAINT = (128, 132, 142)
 STAR_ON = (240, 178, 50)
 STAR_OFF = (78, 80, 88)
 
-_WINDOWS_FONTS = Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts"
-
-_REGULAR = (
-    _WINDOWS_FONTS / "segoeui.ttf",
-    Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
-    Path("/usr/share/fonts/dejavu/DejaVuSans.ttf"),
-    Path("/usr/share/fonts/TTF/DejaVuSans.ttf"),
-    Path("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"),
-    Path("/System/Library/Fonts/Supplemental/Arial.ttf"),
-    Path("/Library/Fonts/Arial.ttf"),
-    _WINDOWS_FONTS / "arial.ttf",
-)
-
-_BOLD = (
-    _WINDOWS_FONTS / "segoeuib.ttf",
-    Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
-    Path("/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf"),
-    Path("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"),
-    Path("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"),
-    Path("/System/Library/Fonts/Supplemental/Arial Bold.ttf"),
-    Path("/Library/Fonts/Arial Bold.ttf"),
-    _WINDOWS_FONTS / "arialbd.ttf",
-)
-
-_fonts: dict[tuple[bool, int], Any] = {}
-
-
 def available() -> bool:
     return Image is not None and config.TICKET_CARDS_ENABLED
 
@@ -67,25 +39,7 @@ def filename(ticket_id: int | str) -> str:
 
 
 def _font(size: int, bold: bool = False) -> Any:
-    key = (bold, size)
-    if key in _fonts:
-        return _fonts[key]
-
-    candidates = [config.FONT_DIR / ("Bold.ttf" if bold else "Regular.ttf"), *(_BOLD if bold else _REGULAR)]
-    font = None
-    for path in candidates:
-        if not path.is_file():
-            continue
-        try:
-            font = ImageFont.truetype(str(path), size * SCALE)
-            break
-        except OSError:
-            continue
-    if font is None:
-        font = ImageFont.load_default(size=size * SCALE)
-
-    _fonts[key] = font
-    return font
+    return fonts.load(size * SCALE, bold)
 
 
 def _rgb(value: int) -> tuple[int, int, int]:
