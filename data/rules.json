@@ -3,10 +3,10 @@
     "name": "{community} Rules and Regulations",
     "community": "{community}",
     "game": "{game}",
-    "version": "1.1",
-    "updated": "2026-08-26",
-    "notice": "Section 0 and Section 1 apply to the Discord and to the {game}. Section A applies to in-game conduct on the lifesteal server.",
-    "philosophy": "The goal is a fair and consistent moderation system that holds wrongdoers accountable while leaving the survival gameplay itself unrestricted. Stealing, raiding, griefing, trapping and betrayal are core lifesteal mechanics and are never punishable. Rules exist to protect people, not inventories.",
+    "version": "2.0",
+    "updated": "2026-05-05",
+    "notice": "Sections 0 and 1 apply to the Discord and to competitive play. Section A covers matches, scrims and team organisation.",
+    "philosophy": "The goal is fair and balanced moderation that promotes positive behaviour and holds people accountable. Punishments listed here are the standard outcome, not the ceiling: staff may escalate where severity clearly warrants it, and every escalation is recorded on the case.",
     "appeals": "Every ban may be appealed in the appeal server. A permanent ban is the end of an escalation ladder, not the starting point, and it remains appealable. Rule 0.5 is the sole exception and is never lifted."
   },
   "actions": {
@@ -21,26 +21,20 @@
       "title": "How and Where We Moderate",
       "summary": "Scope of moderation and the exceptions to it",
       "informational": true,
-      "description": "Moderation covers every public Discord channel and the {game}, including in-game chat, signs, books, item names and builds. Private direct messages are not moderated by default, with the following exceptions, which are actioned wherever they occur: slurs used to harass, harassment or bullying of any kind, hacking or the theft of personal data, threats, scamming for real money, and any form of pedophilia or sexual harassment.\n\nStaff reserve the right to moderate outside these guidelines where it is necessary to keep the community safe. Punishments listed in this document are the standard outcome; staff may escalate where severity clearly warrants it, and every escalation is recorded on the case."
+      "description": "Moderation covers the public channels of {community} and the servers connected to it, including public lobbies, ranked codes, scrimmages and matches.\n\nPrivate conversations are not moderated by default. The exceptions are settings where every party consents to staff review, and serious offences, which are actioned wherever they occur.\n\nStaff reserve the right to moderate beyond these guidelines where it is necessary to keep the community respectful. Punishments listed in this document are the standard outcome; staff may escalate where severity clearly warrants it, and every escalation is recorded on the case."
     },
     {
       "id": "0.1",
       "title": "Racism",
       "summary": "Racially charged language",
-      "description": "It is completely unacceptable to use language that is racially charged, which includes slurs and offensive terminology, in Discord or in game.",
+      "description": "It is completely unacceptable to use language that is racially charged, which includes slurs and offensive terminology.",
       "clauses": [
         {
           "id": "A",
           "title": "Discriminatory or stereotypical language based on race, excluding slurs",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
@@ -48,33 +42,17 @@
           "title": "Using racial slurs",
           "note": "Context is not taken into consideration.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Sharing media, builds or signs containing racist or discriminatory content",
-          "note": "Context is taken into consideration.",
+          "title": "Sharing racist or discriminatory media",
+          "note": "Context is taken into consideration. The first offence runs from a one to three month ban and the second from six months to permanent, so staff pick the tier that fits the severity.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "1mo"},
+            {"action": "ban", "duration": "6mo"}
           ]
         }
       ]
@@ -82,92 +60,51 @@
     {
       "id": "0.2",
       "title": "Homophobia and Transphobia",
-      "summary": "Language and content meant to belittle LGBTQ+ members",
-      "description": "This community firmly opposes any behaviour that harms members of the LGBTQ+ community.",
+      "summary": "Conduct that harms LGBTQ+ members",
+      "description": "We oppose any action that harms LGBTQ+ members of the community.",
       "clauses": [
         {
           "id": "A",
-          "title": "Using hateful language towards the LGBTQ+ community",
-          "note": "If it is not directed at anyone, a warning is issued first. If the warning is ignored or argued, follow the standard progression.",
+          "title": "Hateful language toward LGBTQ+ people, including deliberate misgendering",
+          "note": "If it is not directed at anyone, a warning is given first. Ignoring or arguing with that warning moves to the ladder below.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Using a profile, username or skin to represent homophobic concepts",
-          "note": "The member is asked to remove the content first. This punishment applies on refusal.",
+          "title": "Homophobic or transphobic profile content, including avatar, bio and name",
+          "note": "Staff request the content is removed first. Failing to comply carries the ban below.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"}
           ]
         },
         {
           "id": "C",
-          "title": "Using slurs typically used to target the LGBTQ+ community",
+          "title": "Slurs targeting LGBTQ+ people",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "D",
-          "title": "Sharing anti LGBTQ+ media",
+          "title": "Sharing anti-LGBTQ+ media",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1mo"},
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "E",
-          "title": "Using vocabulary that can be interpreted as homophobic",
-          "note": "For example using a sexuality as an insult or to convey negativity.",
+          "title": "Using LGBTQ+ terms as an insult, such as calling something gay",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -175,91 +112,42 @@
     {
       "id": "0.3",
       "title": "NSFW",
-      "summary": "Posting or promoting content that is inappropriate",
-      "description": "The promotion of content that is not safe for work is not permitted in Discord, in chat, in books, on signs, or in builds.",
+      "summary": "Not safe for work content",
+      "description": "Content that is not safe for work is not promoted or shared here.",
       "clauses": [
         {
           "id": "A",
-          "title": "Minor NSFW solicitation, such as suggestive content with no nudity or innuendo",
+          "title": "Minor NSFW content, such as suggestive jokes, mild profanity and innuendo",
+          "note": "The content is removed alongside the first warning.",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "ban",
-              "duration": "3d"
-            }
+            {"action": "warn"},
+            {"action": "mute", "duration": "1d"},
+            {"action": "ban", "duration": "3d"}
           ]
         },
         {
           "id": "B",
-          "title": "Medium NSFW solicitation, such as partial nudity, excessive targeted profanity or mild violence",
+          "title": "Medium NSFW content, such as partial nudity, heavy profanity or mild violence",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            }
+            {"action": "ban", "duration": "1w"},
+            {"action": "ban", "duration": "1mo"},
+            {"action": "ban", "duration": "3mo"}
           ]
         },
         {
           "id": "C",
-          "title": "Major NSFW solicitation, such as explicit content, full nudity, sexual acts or graphic violence",
+          "title": "Major NSFW content, such as explicit material, full nudity or graphic violence",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1y"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "1y"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "D",
-          "title": "Building, naming or decorating anything in game to depict NSFW content",
-          "note": "The build is removed. The member is asked to take it down first where the content is borderline.",
+          "title": "NSFW profile content",
+          "note": "Staff request the content is removed first. Failing to comply carries the ban below.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "1y"
-            }
-          ]
-        },
-        {
-          "id": "E",
-          "title": "Using a profile picture, bio, name, nickname or skin to promote NSFW media",
-          "note": "The member is asked to remove the content first. This punishment applies on refusal.",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "1y"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "1y"}
           ]
         }
       ]
@@ -267,150 +155,68 @@
     {
       "id": "0.4",
       "title": "Harassment",
-      "summary": "Bullying and relentlessly bothering people without their consent",
-      "description": "Cyber bullying and targeted aggression cause lasting harm. There is zero tolerance for it. Note that in game hostility such as being raided, killed or robbed is not harassment.",
+      "summary": "Cyberbullying and targeted aggression",
+      "description": "There is zero tolerance for cyberbullying and targeted aggression, whether it happens in public or in private.",
       "clauses": [
         {
           "id": "A",
-          "title": "Cyber bullying or targeted aggression that causes harm, in private messages or public chats",
+          "title": "Cyberbullying or targeted aggression",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "ban", "duration": "1mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Repeatedly voicing negative opinions towards an individual beyond playful banter",
-          "note": "Members who are consistently involved in disputes receive escalating mutes and, given the severity, bans.",
+          "title": "Repeatedly voicing negative opinions about a member beyond banter",
+          "note": "Members who are consistently involved in disputes receive longer mutes, and bans where the severity warrants it.",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            }
+            {"action": "mute", "duration": "1d"}
           ]
         },
         {
           "id": "C",
-          "title": "Mocking someone over traumatic events or significant historical tragedies",
+          "title": "Mocking traumatic events",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "D",
           "title": "Sexual harassment",
-          "note": "Threatening rape in any context is an immediate permanent ban regardless of offense count.",
+          "note": "Threatening rape is a permanent ban regardless of context.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "E",
-          "title": "Casual use of the word rape as gamer vocabulary",
+          "title": "Using rape as gamer vocabulary",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "31d"
-            },
-            {
-              "action": "mute",
-              "duration": "3mo"
-            }
+            {"action": "mute", "duration": "7d"},
+            {"action": "mute", "duration": "31d"},
+            {"action": "mute", "duration": "3mo"}
           ]
         },
         {
           "id": "F",
-          "title": "Spam pinging, or pinging people without their permission",
+          "title": "Spam pinging, or pinging without permission",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "mute", "duration": "6mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "G",
-          "title": "Encouraging or suggesting self harm, suicide or related behaviour",
+          "title": "Encouraging self-harm or suicide",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "H",
-          "title": "Targeted in game stalking used solely to drive a member off the server",
-          "note": "Raiding, killing and stealing are permitted. This clause covers relentless targeting paired with harassment in chat, after the victim has asked staff for help.",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -418,84 +224,52 @@
     {
       "id": "0.5",
       "title": "Pedophilia",
-      "summary": "Grooming or inappropriate conduct between an adult and a minor",
-      "description": "There is a zero tolerance policy towards pedophilia in a community where younger players interact with adults.",
+      "summary": "Grooming and inappropriate conduct toward minors",
+      "description": "There is zero tolerance for grooming and for any inappropriate action by an adult toward a child. Punishments under this rule are never lifted and cannot be appealed.",
       "clauses": [
         {
           "id": "A",
-          "title": "Any conduct falling under this rule",
+          "title": "Any offence under this rule",
+          "note": "This decision is final and is never appealable.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
     },
     {
       "id": "0.6",
-      "title": "Anti Religious Conduct",
-      "summary": "Being ignorant or disrespectful towards religion",
-      "description": "This community holds a position of religious neutrality. Atheism and spirituality are included under the term religion.",
+      "title": "Anti-Religious Conduct",
+      "summary": "Religious neutrality and empathy",
+      "description": "The community stays religiously neutral and prioritises empathy over argument.",
       "clauses": [
         {
           "id": "A",
-          "title": "Engaging in debates about religion or the existence of a deity",
-          "note": "All parties involved receive the punishment.",
+          "title": "Religious debate",
+          "note": "Applies to every party involved in the debate.",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "6mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Mocking religion or treating religious belief as frivolous or unintelligent",
+          "title": "Mocking a religion or dismissing someone's beliefs",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "ban", "duration": "1mo"},
+            {"action": "mute", "duration": "6mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Discriminating against individuals of Jewish heritage",
+          "title": "Anti-Semitic discrimination",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -503,43 +277,25 @@
     {
       "id": "0.7",
       "title": "Sexism",
-      "summary": "Reinforcing gender stereotypes or claiming one gender is superior",
-      "description": "This community values and respects members of all genders.",
+      "summary": "Respect for people of every gender",
+      "description": "Individuals of all genders are respected here, and gender stereotypes are rejected.",
       "clauses": [
         {
           "id": "A",
-          "title": "Promoting and upholding sexist ideals",
+          "title": "Promoting sexist ideals",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Endorsing or spreading media that reinforces sexist ideologies",
+          "title": "Sharing sexist media or content",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -547,39 +303,24 @@
     {
       "id": "0.8",
       "title": "Politics",
-      "summary": "Disrespectful discussion of political views",
-      "description": "Civil political discussion is tolerated, but discussions that breach the respect and courtesy standards are ended by staff.",
+      "summary": "Civil political discussion",
+      "description": "Political discussion is expected to stay civil, reasoned and free from personal attacks.",
       "clauses": [
         {
           "id": "A",
-          "title": "Expressing support for abhorrent political figures or regimes",
+          "title": "Expressing support for abhorrent political figures",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Disrespect or ridicule towards individuals based on their political views",
+          "title": "Disrespecting or ridiculing someone for their political views",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -587,80 +328,44 @@
     {
       "id": "0.9",
       "title": "Ableism",
-      "summary": "Discriminating against disabled people",
-      "description": "Ableism is under recognised, so awareness is raised first where appropriate. Attempts to exploit that leniency to spread hate are not tolerated.",
+      "summary": "Discrimination against disabled people",
+      "description": "Discriminatory behaviour toward disabled individuals is not tolerated.",
       "clauses": [
         {
           "id": "A",
           "title": "Mocking disabilities",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Indirectly employing ableist slurs",
-          "note": "Neutral, technical or historical usage that clearly and solely means delayed or slowed, or that forms part of a genuine clinical or archival quotation, is not punished, provided the context cannot reasonably be read as a slur.",
+          "title": "Indirect use of ableist slurs",
+          "note": "Neutral, technical or historical use of the word is not punished.",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Directly employing ableist slurs",
+          "title": "Direct use of ableist slurs",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1mo"},
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "D",
-          "title": "Spreading ableist content",
+          "title": "Sharing ableist content",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -668,179 +373,87 @@
     {
       "id": "1.0",
       "title": "Hacking and Personal Data",
-      "summary": "Violating the privacy of others",
-      "description": "There is zero tolerance for malicious cyber activity such as hacking, identity theft, or the unauthorised handling of personal information. This rule concerns real people, not in game accounts or inventories.",
+      "summary": "Malicious cyber activity and private information",
+      "description": "There is zero tolerance for malicious cyber activity and for the misuse of anyone's personal information.",
       "clauses": [
         {
           "id": "A",
-          "title": "Unauthorised disclosure or acquisition of an individual's personal information",
-          "note": "Staff investigate the situation fully before the punishment is applied.",
+          "title": "Disclosing or acquiring personal information without permission",
+          "note": "Applied after staff have investigated.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Using an individual's personal information to blackmail them",
+          "title": "Using personal information to blackmail someone",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Impersonating another member's profile, username or skin",
-          "note": "The member is asked to change their profile first. This punishment applies on refusal and is lifted once the profile is changed.",
+          "title": "Impersonating someone else's profile",
+          "note": "Staff ask for the profile to be changed first. The ban stands until it is changed.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "1mo"}
           ]
         },
         {
           "id": "D",
-          "title": "Faking evidence as a form of defamation",
-          "note": "The faker receives the punishment that their false report would have carried for the accused.",
+          "title": "Faking evidence or filing a false report",
+          "note": "Punished to the severity of whatever was falsely reported, so file the case under that rule and record this clause in the reason.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"}
           ]
         },
         {
           "id": "E",
-          "title": "Scamming a member out of real money, accounts, or anything of real world value",
-          "note": "In game scamming for in game items is permitted and is not covered by this clause.",
+          "title": "Scamming",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "F",
-          "title": "Attacking the server or its infrastructure, including denial of service attacks",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
     },
     {
       "id": "1.1",
-      "title": "Server Sabotage",
-      "summary": "Deliberately undermining the server itself rather than playing on it",
-      "description": "Fair play protects the server as a service. Attacks on the health of the server, as opposed to attacks on other players, are treated seriously.",
+      "title": "Competitive Sabotage",
+      "summary": "Unsportsmanlike tactics outside the game",
+      "description": "Fair play is essential. Tactics that sabotage another team outside of the game itself are punished here.",
       "clauses": [
         {
           "id": "A",
-          "title": "Reporting staff bias in bad faith, or making repeated knowingly false reports",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
-          ]
+          "title": "Staff bias",
+          "note": "Reported to an admin, who investigates. No punishment is filed from this clause.",
+          "offenses": []
         },
         {
           "id": "B",
-          "title": "Organising a coordinated effort to drive players off the server or to shut it down",
+          "title": "Deliberately disrupting scheduling",
+          "note": "The first offence is a forced forfeit applied by staff. The permanent ban applies to the captain.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Recruiting for or advertising a competing server inside {community}",
+          "title": "Poaching or bribing players",
+          "note": "The first offence is a forced forfeit applied by staff.",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "D",
-          "title": "Leaking staff discussions, moderation records, or internal channels",
+          "title": "DDoS attacks",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -848,161 +461,80 @@
     {
       "id": "1.2",
       "title": "Cheating",
-      "summary": "Using unauthorised methods to gain an advantage",
-      "description": "Lifesteal is built on risk. Cheating removes that risk and is the most damaging thing a player can do to the server.\n\nAllowed client modifications: Fabric and Forge performance mods such as Sodium, Lithium, Iris and OptiFine; visual mods that do not reveal hidden information; minimaps with cave mapping and entity radar disabled; Litematica in printer disabled mode; Inventory Tweaks and similar quality of life mods.\n\nProhibited at all times: X-ray of any kind, including texture packs and shaders that reveal ores; kill aura, aimbot, reach, velocity and anti knockback; auto totem, auto clicker and macros that automate combat; flight, speed, no fall, jesus and other movement hacks; freecam; entity or player radar; scaffold; nuker and fast break; any ghost client.",
+      "summary": "Cheating in public and competitive play",
+      "description": "There is zero tolerance for cheating in the public and competitive scenes.\n\nAllowed headsets: Meta Quest 2, 3, 3S and Pro; Valve Index and Steam Frame; all Pimax, HTC Vive and BigScreen VR headsets; HP Reverb G2; Lenovo Explorer; DPVR E4.\n\nAllowed SideQuest settings on Quest: texture size up to 3072, refresh rate between 60 and 120 Hz, FFR and chromatic aberration at any value, capture size, FPS and bitrate at default or below, experimental mode off, MTP and full rate off.\n\nAllowed SteamVR settings: refresh rate between 72 and 120 Hz, render resolution up to 200, resolution multiplier up to 200, prediction up to 0.00, override world scale off.",
       "clauses": [
         {
           "id": "A",
-          "title": "Using a combat cheat such as kill aura, aimbot, reach, velocity or anti knockback",
+          "title": "Using PCVR by connecting a standalone headset in an official match",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Using X-ray, a cave finder, or any method of revealing hidden blocks",
+          "title": "Elongating reach, including world scale, sticks and extended grips",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Using movement cheats such as flight, speed, no fall or jesus",
+          "title": "PSA, crouch jumping or the rec room glitch",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "D",
-          "title": "Using auto totem, auto clicker, or a macro that automates combat or clicking",
+          "title": "VPN or network manipulation",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "E",
-          "title": "Using freecam, entity radar, or any other information cheat",
+          "title": "A captain knowingly fielding cheaters or banned players",
+          "note": "The team is disqualified alongside the captain's ban.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "F",
-          "title": "Using a VPN or proxy to evade a ban or to disguise an alternate account",
+          "title": "Interfering with game files",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "G",
-          "title": "Distributing cheat clients, or teaching others how to break any clause of this rule",
+          "title": "Software or techniques that tamper with game performance",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "H",
-          "title": "Misrepresenting your client, mods or hardware, or evading staff questions about them",
+          "title": "Getting out of the map",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "I",
-          "title": "Allowing a known cheater to use your account, or playing on an account that is not yours",
+          "title": "Distributing methods that break rule 1.2",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "ban", "duration": "perm"}
+          ]
+        },
+        {
+          "id": "J",
+          "title": "Misrepresenting hardware or configuration, or evading staff questions about it",
+          "offenses": [
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -1010,59 +542,29 @@
     {
       "id": "1.3",
       "title": "Self Promotion and Advertising",
-      "summary": "Using the community to advertise something",
-      "description": "Promotion of pre approved communities is allowed in the designated channels. Everything else requires staff approval first.",
+      "summary": "Where promotion is allowed",
+      "description": "Advertising other leagues and pre-approved Discord servers is permitted. Anything else is covered below.",
       "clauses": [
         {
           "id": "A",
-          "title": "Advertising an unaffiliated server or community, in channels or by direct message",
+          "title": "Advertising an unaffiliated personal Discord",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "mute", "duration": "6mo"},
+            {"action": "mute", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Promoting content outside the designated channels",
+          "title": "Promoting in a channel that is not designated for it",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "mute", "duration": "6mo"},
+            {"action": "mute", "duration": "perm"}
           ]
         }
       ]
@@ -1070,96 +572,18 @@
     {
       "id": "1.4",
       "title": "Improper Chat Behaviour",
-      "summary": "Abusing chat to disrupt the flow of conversation",
-      "description": "Chat is shared space. Swearing is allowed. Excessive swearing, spam and disruption are not.",
+      "summary": "Disruption of chat",
+      "description": "Chat stays readable for everyone.",
       "clauses": [
         {
           "id": "A",
-          "title": "Spamming, including copypasta, text walls and repeated messages",
+          "title": "Spamming, copypasta or walls of text",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "title": "Excessive profanity, meaning profanity used at volume or aimed at a person",
-          "note": "Ordinary swearing is permitted. This clause is for saturation or targeting.",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "title": "Bypassing the chat filter with spacing, symbols or deliberate misspelling",
-          "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Posting unsolicited links, invites, or file downloads",
-          "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "mute", "duration": "6mo"},
+            {"action": "mute", "duration": "perm"}
           ]
         }
       ]
@@ -1167,87 +591,16 @@
     {
       "id": "1.5",
       "title": "Cooperation with Staff",
-      "summary": "Working with the staff team rather than against it",
-      "description": "Staff decisions can be questioned in a ticket. They cannot be fought in public channels.",
+      "summary": "How members deal with staff",
+      "description": "Staff have to be able to do their job without being fought at every step.",
       "clauses": [
         {
           "id": "A",
-          "title": "Hostility towards staff members, including in response to a staff decision",
+          "title": "Hostility toward staff members",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "title": "Refusing to comply with a reasonable staff instruction or investigation",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "title": "Impersonating a staff member, or claiming staff authority you do not hold",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Opening false, joke or empty tickets, or abusing the ticket system",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]
@@ -1255,92 +608,33 @@
     {
       "id": "1.6",
       "title": "Enabling and Supporting Banned Members",
-      "summary": "Keeping banned members properly isolated",
-      "description": "A ban means nothing if the community carries the banned member anyway. These rules install consequences for supporting them.",
+      "summary": "Keeping banned members out",
+      "description": "A ban only works if the rest of the community does not work around it.",
       "clauses": [
         {
           "id": "A",
-          "title": "Allowing a banned player to play on the server through your account or with your help",
+          "title": "Allowing banned players into competitive activities",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Assisting ban evasion, or failing to report an alternate account you know about",
+          "title": "Helping a banned player take part, or helping them evade a ban",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "ban", "duration": "perm"}
           ]
         },
         {
           "id": "C",
-          "title": "Defending or justifying the actions of banned players in public channels",
-          "note": "Bans may be discussed in a ticket.",
+          "title": "Defending banned players in public chat",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            },
-            {
-              "action": "mute",
-              "duration": "3mo"
-            },
-            {
-              "action": "mute",
-              "duration": "6mo"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Evading a ban or a mute yourself, on any account",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "1y"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"},
+            {"action": "mute", "duration": "3mo"},
+            {"action": "mute", "duration": "6mo"}
           ]
         }
       ]
@@ -1348,648 +642,208 @@
     {
       "id": "1.7",
       "title": "Voice Chat",
-      "summary": "All server rules apply in voice",
-      "description": "Every rule in this document applies in voice channels and in proximity voice chat.",
+      "summary": "Conduct in voice channels",
+      "description": "Every rule in this document applies in voice chat as well as in text.",
       "clauses": [
         {
           "id": "A",
-          "title": "Using a voice changer to disrupt or deceive",
+          "title": "Using a voice changer",
+          "note": "The final tier is a permanent server mute.",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            }
+            {"action": "warn"},
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "perm"}
           ]
         },
         {
           "id": "B",
-          "title": "Disrupting voice with loud soundboards, mic spam or ear rape",
+          "title": "Disrupting voice chat with soundboards or mic spam",
+          "note": "Mutes stack if it keeps happening.",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"}
           ]
         },
         {
           "id": "C",
-          "title": "Starting or escalating an argument in voice",
-          "note": "Minor is one day, medium is one week, major is one month. Staff select the offense level that fits.",
+          "title": "Arguments and conflicts in voice chat",
+          "note": "A minor argument is one day, a medium argument one week and a major argument one month. Staff pick the tier that fits rather than counting offences.",
           "offenses": [
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            },
-            {
-              "action": "mute",
-              "duration": "1mo"
-            }
+            {"action": "mute", "duration": "1d"},
+            {"action": "mute", "duration": "1w"},
+            {"action": "mute", "duration": "1mo"}
           ]
         },
         {
           "id": "D",
-          "title": "Encouraging an argument in voice",
+          "title": "Encouraging arguments in voice chat",
+          "note": "Mutes stack if it keeps happening.",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            }
+            {"action": "warn"},
+            {"action": "mute", "duration": "1d"}
           ]
         }
       ]
     },
     {
       "id": "A.0",
-      "title": "Permitted Gameplay",
-      "summary": "What lifesteal allows, stated plainly",
+      "title": "Match Start and Preparation",
+      "summary": "Getting a match started on time",
       "informational": true,
-      "description": "{community} is a lifesteal server. The following are core mechanics and are never punishable, no matter how upset the victim is:\n\nStealing from chests, enderchests, shulkers and dropped items. Raiding and griefing any player base, including full destruction. Killing any player, anywhere, at any time, including on sight and while they are unprepared. Taking hearts through combat and leaving a player on their last life. Trapping players with lava, TNT, pistons, portals or falling blocks. Betraying allies, breaking deals, and scamming other players out of in game items. Spawn killing outside the protected spawn radius. Baiting, luring and setting up ambushes. Claiming, hoarding or blocking access to natural resources.\n\nDo not open a ticket to report any of the above. Reports about permitted gameplay are closed and may be actioned under rule 1.5 clause D."
+      "description": "Teams play 4v4, or 3v3 with staff permission. Team members wear matching colours, the two teams wear opposite colours, cosmetics are uniform, and every player carries the team tag in their Discord name. Mods are uninstalled before play.\n\nBefore a match the referee confirms player mutes, confirms the teams, verifies the requirements above, and positions themselves in the gazebo, on the stump or out of the map.\n\nCasters use the supplied OBS overlay and settings, stay able to hear the referee, keep commentary on topic, and verify everything works before the match.\n\nAt the start of a round the tagged players stand in the gazebo. During the round the taggers tag the other team, and tagging your own team is permitted."
     },
     {
       "id": "A.1",
-      "title": "Exploits and Duplication",
-      "summary": "Bugs that break the economy",
-      "description": "Survival mechanics are fair game. Bugs that create items or hearts from nothing are not. Report any exploit you find in a support ticket; reporting an exploit in good faith is never punished.",
-      "clauses": [
-        {
-          "id": "A",
-          "title": "Duplicating items, blocks or hearts through any bug or exploit",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "title": "Distributing a duplication or exploit method to other players",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "title": "Knowingly using duplicated items after being told to hand them in",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Leaving the world border, entering unloaded terrain, or using a coordinate exploit",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
-          ]
-        },
-        {
-          "id": "E",
-          "title": "Abusing a plugin or command bug, including combat logging to escape a fight",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "3d"
-            },
-            {
-              "action": "ban",
-              "duration": "14d"
-            }
-          ]
-        }
-      ]
+      "title": "Round Resets and Technical Difficulties",
+      "summary": "When a round is reset",
+      "informational": true,
+      "description": "A player who is away without explanation, or not ready, gets a ten second countdown from the referee before the round starts without them.\n\nA player who is away and asks for time gets thirty seconds. Asking repeatedly across two or more rounds per team falls under the stalling rules.\n\nIf a runner disconnects mid round there is no reset. A player who rejoins cannot help tag, and the round stays 3v4.\n\nA team may reset once per scrim to get a different starting tagger."
     },
     {
       "id": "A.2",
-      "title": "Server Performance",
-      "summary": "Keeping the server playable for everyone",
-      "description": "Redstone and farms are encouraged. Machines built to degrade server performance are not.",
+      "title": "Stalling",
+      "summary": "Wasting time during a match",
+      "description": "Stalling tactics slow a match down and are penalised by the referee first and by the moderation team after that.",
       "clauses": [
         {
           "id": "A",
-          "title": "Building a lag machine, or any contraption designed to harm server performance",
+          "title": "Intentionally impeding the advancement of the game",
+          "note": "The second offence is sitting out a round, the third forfeits a point and the fourth forfeits the match. Those are applied by the referee. A fifth offence from the same player in a season starts stacking one month bans.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "ban", "duration": "1mo"}
           ]
         },
         {
           "id": "B",
-          "title": "Running an unattended farm that measurably degrades tick rate after a staff warning",
-          "note": "Staff ask for the farm to be switched off or rebuilt first.",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "3d"
-            },
-            {
-              "action": "ban",
-              "duration": "14d"
-            }
-          ]
+          "title": "Wasting time between rounds",
+          "note": "Each team may stop three times for a short break, between ten seconds and one minute at the referee's discretion. Going beyond that is treated as a second offence under clause A.",
+          "offenses": []
         },
         {
           "id": "C",
-          "title": "Crash exploits, packet spam, or anything that disconnects other players",
+          "title": "Intentional map hopping",
+          "note": "The first offence forfeits the round. The second forfeits the match and carries the ban below. Anything beyond that stacks one month bans.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Excessive entity or item stacking used to crash chunks",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
+            {"action": "warn"},
+            {"action": "ban", "duration": "1mo"}
           ]
         }
       ]
     },
     {
       "id": "A.3",
-      "title": "Alternate Accounts and Heart Farming",
-      "summary": "One player, one set of hearts",
-      "description": "Lifesteal only works when hearts are won from real opponents. Manufacturing hearts from accounts you control defeats the entire mode.",
+      "title": "Prohibited Tactics",
+      "summary": "Tactics that are not skill based",
+      "description": "Matches are decided by skill and fair mechanics.",
       "clauses": [
         {
           "id": "A",
-          "title": "Farming hearts from an alternate account you own or control",
+          "title": "Hiding strategies",
+          "note": "Identified by the referee. The second offence forfeits the round and the third forfeits the match. A fourth starts stacking one month bans.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "title": "Arranging heart trading, where players kill each other on purpose to transfer hearts",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "title": "Running an undeclared alternate account on the server",
-          "note": "Alternate accounts must be declared to staff in a ticket before they join.",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Using an alternate account to hold items or hearts for a banned player",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "ban", "duration": "1mo"}
           ]
         }
       ]
     },
     {
       "id": "A.4",
-      "title": "Builds, Signs and Chat Content",
-      "summary": "In game content is held to the same standard as Discord",
-      "description": "Anything you write or build in game is public content. Sections 0.1 through 0.9 apply to signs, books, item names, banners, pixel art and terrain edits.",
+      "title": "Substitutes, Matches and Scrims",
+      "summary": "Who may play for a team",
+      "description": "Rosters stay honest so that every match is played on a level field.",
       "clauses": [
         {
           "id": "A",
-          "title": "Building, writing or naming anything that breaks a Section 0 rule",
-          "note": "The punishment from the Section 0 rule that was broken applies in addition to this case.",
+          "title": "Using banned players in an unofficial scrim",
+          "note": "Under an official team name: a very strong warning, then instant disbandment. Without an official team name: a warning, then the captain is replaced, then disbandment.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "warn"}
           ]
         },
         {
           "id": "B",
-          "title": "Building offensive imagery in a public or high traffic area",
+          "title": "Using substitutes improperly in an official match",
+          "note": "A substitute has to already be on the team, and may only come in at the start of a round. Playing someone from outside the team forfeits the match instantly and disbands the team.",
           "offenses": [
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
+            {"action": "warn"}
           ]
         }
       ]
     },
     {
       "id": "A.5",
-      "title": "Spawn and Protected Areas",
-      "summary": "The only places on the map where the normal rules do not apply",
-      "description": "Griefing and killing are permitted everywhere except the protected spawn region, official event arenas while an event is running, and any area staff have marked as protected. Those areas exist so new players have somewhere to stand.",
+      "title": "Respecting Referees",
+      "summary": "How players treat referees",
+      "description": "There is zero tolerance for mistreating a referee. Referee decisions are final during the match.",
       "clauses": [
         {
           "id": "A",
-          "title": "Killing players inside the protected spawn radius",
+          "title": "Toxicity toward a referee, including cursing and name calling",
+          "note": "One player: warning, then sitting out a round, then ejection from the match and a one match suspension. A whole team: warning, then a thirty second tagger hold, then a point deduction and a final warning, then forfeit. Everyone involved: warning, second warning, then the match is rescheduled with a different referee.",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "3d"
-            },
-            {
-              "action": "ban",
-              "duration": "14d"
-            }
+            {"action": "warn"},
+            {"action": "warn"},
+            {"action": "warn"}
           ]
         },
         {
           "id": "B",
-          "title": "Trapping, walling or camping the spawn exit to farm players leaving spawn",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "title": "Griefing spawn, an event arena, or a staff protected build",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "title": "Disrupting an official event, including killing participants outside the event rules",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
-          ]
+          "title": "Arguing with referee decisions",
+          "note": "Referee decisions are final. Appeals go to the moderation team after the match. A player or team may make a brief case, and it escalates only if it turns disrespectful.",
+          "offenses": []
         }
       ]
     },
     {
       "id": "A.6",
-      "title": "Real World Trading",
-      "summary": "In game value stays in game",
-      "description": "Trading, scamming and stealing inside the game are permitted. Bringing real money, accounts or external goods into it is not, because staff cannot moderate it and it makes real victims.",
-      "clauses": [
-        {
-          "id": "A",
-          "title": "Buying or selling in game items, hearts or ranks for real money",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "title": "Scamming a member out of real money, gift cards or accounts",
-          "note": "This is also a breach of rule 1.0 clause E.",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "title": "Trading in game items for services or goods outside the server",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            }
-          ]
-        }
-      ]
+      "title": "Contracts",
+      "summary": "Trial periods, contracts and bracket lock",
+      "informational": true,
+      "description": "A new player has a three day trial period and cannot play official matches during it. A match admin may approve an exception for special causes. Leaving the team resets the trial.\n\nAfter the trial a player is on a two week contract, which is seventeen days including the trial. A player who is kicked stays bound for two weeks, a player who leaves stays bound for two weeks, and a team cannot contract a player from a team it is playing that week.\n\nOnce the elimination bracket starts, rosters are locked. A team may kick a player but cannot replace them except in a critical condition, and cannot fill a spot with a player who was locked to another roster."
     },
     {
       "id": "A.7",
-      "title": "Griefing the Server Itself",
-      "summary": "The line between raiding a player and attacking the server",
-      "description": "Destroying another player's base is gameplay. Destroying shared infrastructure that the whole server depends on is not.",
-      "clauses": [
-        {
-          "id": "A",
-          "title": "Destroying shared infrastructure such as public nether highways, portals or spawn shops",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "7d"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "title": "Deliberately destroying world features the server relies on, such as the end fight or a stronghold portal",
-          "offenses": [
-            {
-              "action": "ban",
-              "duration": "14d"
-            },
-            {
-              "action": "ban",
-              "duration": "3mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
-        }
-      ]
+      "title": "Team Format",
+      "summary": "Team size, age and leadership",
+      "informational": true,
+      "description": "A team holds at most ten players and at least four. A team that drops below four has three days to find a fourth.\n\nPlayers must be thirteen or older. An underage player is temporarily banned until they reach thirteen.\n\nA team has one captain and one co-captain. The captain is counted separately from the playing roster, and takes a roster spot if they play."
     },
     {
       "id": "A.8",
-      "title": "Reporting and Evidence",
-      "summary": "How reports are judged",
-      "description": "Reports are decided on evidence. Uncropped, unedited video is the standard. Screenshots are accepted only for chat offences, and only when the sender and the timestamp are visible.",
+      "title": "Tardiness",
+      "summary": "Arriving on time",
+      "informational": true,
+      "description": "Both teams arrive five minutes before the scheduled time. Staff record a strike when a team is reported late, and three strikes forfeit the match.\n\nMissing players have five minutes after the scheduled time. Beyond that the match is forfeited or rescheduled for the same day.\n\nNames and colours are ready within the five minute window. Not being ready is penalised under the stalling rules."
+    },
+    {
+      "id": "A.9",
+      "title": "{community} Codes",
+      "summary": "Conduct inside competitive codes",
+      "description": "Competitive codes only work if everyone in them is there to play.",
       "clauses": [
         {
           "id": "A",
-          "title": "Submitting cropped, edited or fabricated evidence",
-          "note": "Fabricated evidence is handled under rule 1.0 clause D instead, which carries the accused player's punishment.",
-          "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "ban",
-              "duration": "1mo"
-            },
-            {
-              "action": "ban",
-              "duration": "6mo"
-            },
-            {
-              "action": "ban",
-              "duration": "perm"
-            }
-          ]
+          "title": "What counts as griefing a code",
+          "note": "Griefing includes not participating, code squatting, playing without competitive intent, hiding, and activating game features such as Lucy or Lava. Punishments are filed under clause B.",
+          "offenses": []
         },
         {
           "id": "B",
-          "title": "Reporting permitted gameplay as a rule break after being told it is allowed",
+          "title": "Griefing a code",
           "offenses": [
-            {
-              "action": "warn",
-              "duration": "perm"
-            },
-            {
-              "action": "mute",
-              "duration": "1d"
-            },
-            {
-              "action": "mute",
-              "duration": "7d"
-            }
+            {"action": "ban", "duration": "1mo"},
+            {"action": "ban", "duration": "3mo"},
+            {"action": "ban", "duration": "perm"}
           ]
         }
       ]

@@ -225,7 +225,7 @@ class WarningStep(ui.Layout):
                 "**Opening a false ticket will result in a punishment.**\n\n"
                 "Tickets are read by the staff team and are recorded. Joke tickets, empty "
                 "tickets and reports about permitted gameplay are punished under rule "
-                "1.5[D] of the rulebook.\n\n"
+                "1.0[D] of the rulebook.\n\n"
                 "Do you understand, and do you want to continue?"
             )
         )
@@ -771,7 +771,7 @@ class Tickets(commands.Cog):
                         ("Subject", ticket["answers"].get("subject", "Not provided")),
                         ("Scope", scope_label(ticket.get("scope"))),
                     ],
-                    footer="Opening a false ticket will result in a punishment under rule 1.5[D].",
+                    footer="Opening a false ticket will result in a punishment under rule 1.0[D].",
                     accent=config.COLOR_PRIMARY,
                     thumbnail=icon,
                 )

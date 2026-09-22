@@ -1,4 +1,4 @@
-# Server Manager
+# METRO
 
 A Discord bot for tickets, ban appeals, rulebook-based moderation and server logging, built on discord.py Components V2.
 

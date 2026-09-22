@@ -26,8 +26,8 @@ LOG_DIR = BASE_DIR / "logs"
 for _directory in (DATA_DIR, ASSET_DIR, TRANSCRIPT_DIR, LOG_DIR):
     _directory.mkdir(parents=True, exist_ok=True)
 
-BOT_NAME = _env_str("BOT_NAME", "Server Manager")
-COMMUNITY_NAME = _env_str("COMMUNITY_NAME", "Your Server")
+BOT_NAME = _env_str("BOT_NAME", "METRO")
+COMMUNITY_NAME = _env_str("COMMUNITY_NAME", "METRO")
 COMMUNITY_TAGLINE = _env_str("COMMUNITY_TAGLINE", "Support and Moderation")
 GAME_NAME = _env_str("GAME_NAME", "game server")
 
